@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap_4/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="bootstrap_4/js/bootstrap.min.js"></script>
+
+    
+    <title>Personal Portfolio Webpage</title>
+</head>
+<style>
+   
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+     font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #navbr{
+        background-color: #be3144;
+        float: left;
+        width: 100%;
+        box-shadow: rgb(0 0 0 / 40%);
+        z-index: 10;
+    }
+    
+    #navbr ul li{
+        list-style-type: none;
+        display: inline;
+       float: right;
+        margin: 0px 15px;
+    }
+    #navbr ul li a{
+     
+    font-size: 20px;
+    padding: 20px 10px;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: bold;
+
+    }
+    #navbr ul li a:hover{
+        background-color: rgb(69, 69, 151);
+    }
+    #about{
+        width: 100%;
+        height: 100vh;
+        background-color:#000;;
+       display: block;
+
+    }
+    #about h1{
+        color: whitesmoke;
+        padding-top: 280px;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+       
+    }
+    #about p{
+        color: red;
+        font-size: 30px;
+        text-align: center;
+        
+    }
+   
+    #p_section{
+        background:#45567d;
+        width: 100%;
+        margin: auto;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        padding: 10rem 2rem;
+        border-radius: 2px;
+
+    }
+  
+    #point img{
+       align-items: center;
+      padding-left: 20px;
+   }
+  
+  
+    a {
+    text-decoration: none;
+    color: #f0f0f0;
+    }
+    a:hover {
+    text-decoration: none;
+    color: #f0f0f0;
+    cursor: pointer;
+    }
+    
+    p {
+    
+        text-align: center;
+    }
+    #p-title{
+        margin: auto;
+        font-size: 1.5rem;
+        padding: 10px 5px;
+    }
+
+    #name{
+        text-align: center;
+       
+        font-size: 40px;
+        margin: auto;
+        color: whitesmoke;
+        margin-bottom: 80px;
+      
+    }
+    #name h1{
+        border-bottom: 1px solid whitesmoke;
+        width: 45%;
+        margin: auto;
+
+    }
+
+
+.code {
+    color:#45567d;;
+    transition: color 0.3s ease-out;
+}
+#point:hover .code{
+    color: #ff7f50;
+}
+.btn {
+    font-size: 30px;
+    background: #303841;
+    width: 100%;
+    margin: auto;
+    color: whitesmoke;
+}
+.btn:hover {
+    background-color:#be3144 ;
+    margin-right: 5px;
+    color: whitesmoke;
+
+}
+.btn:hover .move{
+    margin-left: 10px;
+    color: whitesmoke;
+
+}
+#contact{
+    width: 100%;
+    height: 30em;
+    color: whitesmoke;
+    background-color: #303841;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+#contact h1{
+    font-size: 70px;
+    margin-top: 90px;
+}
+#contact p{
+
+   font-family:  'Arial Narrow Bold', sans-serif;
+}
+#animation img{
+    margin-top: 20px;
+    padding: 0px 10px;
+    width: 60px;
+    height: 60px;
+
+}
+#animation img {
+    
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+   
+
+}
+#animation img:hover{
+    padding-top: 20px;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out;
+   
+
+}
+#footer{
+    
+    background: #303841;
+    width: 100%;
+    margin: auto;
+    color: whitesmoke;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+
+
+
+   
+   
+  
+   
+
+
+   
+
+
+</style>
+<body>
+
+
+    <nav class="col-md-12 fixed-top" id="navbr">
+            <ul >
+                <li >
+                    <a href="#about" class="nav-link" id="link-nav">About</a>
+                </li>
+                <li >
+                    <a href="#p_section" class="nav-link" id="link-nav">Work</a>
+                </li>
+                <li >
+                    <a href="#contact" class="nav-link" id="link-nav">Contact</a>
+                </li>
+            </ul>
+    </nav>
+    <div class="col-md-12" id="about">
+        <h1>Hey I am Mimic</h1>
+        <p>a web developer</p>
+    </div>
+    
+
+    <section class="row " id="p_section">
+        <div class="col-md-12 mx-auto" id="name">
+            <h1>These are some of my projects</h1>
+        </div>
+        
+       
+     
+        <div class="col-md-4 mx-auto mb-4" id="point">
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+                <img class="first" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" width="390px" height="390px" alt="">
+                <p id="p-title">
+                    <span class="code"><</span>
+                    "Tribute Page"
+                    <span class="code">/></span>
+                </p>
+            </a>
+        </div>
+    
+
+        <div class="col-md-4 mx-auto mb-4" id="point">
+            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" width="390px" height="390px" alt="">
+                <p id="p-title">
+                    <span class="code"><</span>
+                    Random Quote Machine
+                    <span class="code">/></span>
+                </p>
+            </a>
+    
+
+        </div>
+    
+        <div class="col-md-4 mx-auto mb-4" id="point">
+            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" width="390px" height="390px" alt="">
+                <p id="p-title">
+                    <span class="code"><</span>
+                    JavaScript Calculator
+                    <span class="code">/></span>
+                </p>
+            </a>
+        </div>
+        
+        <div class="col-md-4 mx-auto mb-4" id="point">
+            <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" width="390px" height="390px" alt="">
+                <p id="p-title">
+                    <span class="code"><</span>
+                    Map Data Across the Globe
+                    <span class="code">/></span>
+                </p>
+            </a>
+        </div>
+    
+        <div class="col-md-4 mx-auto mb-4" id="point">
+            <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" width="390px" height="390px" alt="">
+                <p id="p-title">
+                    <span class="code"><</span>
+                    Wikipedia Viewer
+                    <span class="code">/></span>
+                </p>
+            </a>
+        </div>
+    
+        <div class="col-md-4 mx-auto mb-4" id="point">
+            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" width="390px" height="390px" alt="">
+                <p id="p-title">
+                    <span class="code"><</span>
+                    Tic Tac Toe Game
+                    <span class="code">/></span>
+                </p>
+            </a>
+        </div>
+    
+        <div class="col-md-2 col-sm-12 mx-auto mb-4">
+            <a href="https://codepen.io/FreeCodeCamp/" class="btn" target="_blank">
+                Show all <span class="move">></span>
+            </a>
+        
+
+        </div>
+      
+   
+    </section>
+    <div class="col-md-12" id="contact">
+        <div class="together">
+            <h1>Let's work together...</h1>
+            <p>How do you take your coffee?</p>
+        </div>
+
+        <div class="col-md-12" id="animation">
+           <img src="facebook.png" alt="">
+           <img src="github.png" alt="">
+           <img src="twitter.png" alt="">
+           <img src="email.png" alt="">
+           <img src="call.png" alt="">
+            
+            
+          </div>
+          <div class="col-md-12" style="width:100%; height:2px; background-color: red; margin-top: 40px;"></div>
+        
+         </div>
+         <footer class="row mx-auto" id="footer">
+             <div class="col-md5 mx-auto">
+                <p>
+                    **This is just a fake portfolio. All the projects and contact details given are not real.
+                 </p>
+             </div>
+             <div class="col-md-4 mx-auto">
+                <p>
+                    "@ creat for"
+                    <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp </a>
+                </p>
+             </div>
+             
+            
+         </footer>
+    
+</body>
+
+</html>
